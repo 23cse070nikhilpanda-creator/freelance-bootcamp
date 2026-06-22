@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nikhil Panda | Web Developer</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header class="container header">
+			<div class="brand">Nikhil Panda</div>
+			<nav class="nav">
+				<a href="#work">Work</a>
+				<a href="#services">Services</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
+
+		<main class="container">
+			<section class="hero">
+				<h1>I build fast, responsive websites for small businesses.</h1>
+				<p>
+					Frontend-first today. Full‑stack in progress. Available for landing pages,
+					portfolios, and small business sites.
+				</p>
+				<div class="buttons">
+					<a class="btn primary" href="#contact">Get a Quote</a>
+					<a class="btn" href="#work">See Work</a>
+				</div>
+			</section>
+
+			<section id="services" class="section">
+				<h2>Services</h2>
+				<div class="grid">
+					<div class="card">
+						<h3>Landing Pages</h3>
+						<p>Modern, mobile-first design that loads fast and converts.</p>
+					</div>
+					<div class="card">
+						<h3>Portfolio Websites</h3>
+						<p>Clean personal sites for creators, students, and professionals.</p>
+					</div>
+					<div class="card">
+						<h3>Website Fixes</h3>
+						<p>Layout issues, responsiveness bugs, speed improvements.</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="work" class="section">
+				<h2>Work</h2>
+				<div class="grid">
+					<div class="card">
+						<h3>Project 1</h3>
+						<p>Coming soon: a responsive landing page template.</p>
+					</div>
+					<div class="card">
+						<h3>Project 2</h3>
+						<p>Coming soon: a simple business homepage.</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section">
+				<h2>Contact</h2>
+				<form class="form">
+					<label>
+						Name
+						<input type="text" placeholder="Your name" required />
+					</label>
+					<label>
+						Email
+						<input type="email" placeholder="you@example.com" required />
+					</label>
+					<label>
+						Message
+						<textarea rows="5" placeholder="What do you need built?" required></textarea>
+					</label>
+					<button class="btn primary" type="submit">Send</button>
+				</form>
+				<p class="note">
+					(Form won’t send yet—this is a UI prototype. We’ll wire it up later.)
+				</p>
+			</section>
+		</main>
+
+		<footer class="container footer">
+			<p>© <span id="year"></span> Nikhil Panda</p>
+		</footer>
+
+		<script>
+			document.getElementById("year").textContent = new Date().getFullYear();
+		</script>
+	</body>
+</html>
