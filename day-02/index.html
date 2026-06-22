@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nikhil Panda | Web Developer</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header class="container header">
+			<div class="brand">Nikhil Panda</div>
+			<nav class="nav">
+				<a href="#work">Work</a>
+				<a href="#services">Services</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
+
+		<main class="container">
+			<section class="hero">
+				<h1>I build fast, responsive websites for small businesses.</h1>
+				<p>
+					Frontend-first today. Full‑stack in progress. Available for landing pages,
+					portfolios, and small business sites.
+				</p>
+				<div class="buttons">
+					<a class="btn primary" href="#contact">Get a Quote</a>
+					<a class="btn" href="#work">See Work</a>
+				</div>
+			</section>
+
+			<section id="services" class="section">
+				<h2>Services</h2>
+				<div class="grid">
+					<div class="card">
+						<h3>Landing Pages</h3>
+						<p>Modern, mobile-first design that loads fast and converts.</p>
+					</div>
+					<div class="card">
+						<h3>Portfolio Websites</h3>
+						<p>Clean personal sites for creators, students, and professionals.</p>
+					</div>
+					<div class="card">
+						<h3>Website Fixes</h3>
+						<p>Layout issues, responsiveness bugs, speed improvements.</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="work" class="section">
+	<h2>Recent Work</h2>
+	<p class="section-subtitle">A few sample builds to show layout, responsiveness, and clean UI.</p>
+
+	<div class="grid work-grid">
+		<article class="card">
+			<h3>Landing Page Template</h3>
+			<p>Mobile-first landing page for a small business with clear CTA and sections.</p>
+			<ul class="list">
+				<li>Responsive layout</li>
+				<li>Clean typography</li>
+				<li>Fast load</li>
+			</ul>
+		</article>
+
+		<article class="card">
+			<h3>Portfolio Website</h3>
+			<p>A simple portfolio layout with projects, about section, and contact form UI.</p>
+			<ul class="list">
+				<li>Modern hero</li>
+				<li>Projects grid</li>
+				<li>Contact section</li>
+			</ul>
+		</article>
+
+		<article class="card">
+			<h3>Business Homepage</h3>
+			<p>Homepage layout with services, testimonials, and pricing section.</p>
+			<ul class="list">
+				<li>Service cards</li>
+				<li>Testimonials</li>
+				<li>Pricing cards</li>
+			</ul>
+		</article>
+	</div>
+</section>
+
+<section class="section" id="testimonials">
+	<h2>Testimonials</h2>
+	<p class="section-subtitle">Sample testimonials for layout (we’ll replace with real ones later).</p>
+
+	<div class="grid">
+		<div class="card">
+			<p class="quote">“Very clean design and delivered on time. The site looks great on mobile.”</p>
+			<p class="quote-by">— Client A</p>
+		</div>
+		<div class="card">
+			<p class="quote">“Quick communication and great attention to detail.”</p>
+			<p class="quote-by">— Client B</p>
+		</div>
+		<div class="card">
+			<p class="quote">“Professional layout and the final page loads fast.”</p>
+			<p class="quote-by">— Client C</p>
+		</div>
+	</div>
+</section>
+
+<section class="section" id="pricing">
+	<h2>Pricing</h2>
+	<p class="section-subtitle">Starter packages (you can adjust anytime).</p>
+
+	<div class="grid">
+		<div class="card price">
+			<h3>Starter</h3>
+			<p class="price-tag">₹2,999</p>
+			<ul class="list">
+				<li>1-page landing</li>
+				<li>Mobile responsive</li>
+				<li>Basic SEO</li>
+				<li>Delivery: 2–3 days</li>
+			</ul>
+			<a class="btn primary" href="#contact">Choose Starter</a>
+		</div>
+
+		<div class="card price popular">
+			<p class="badge">Most Popular</p>
+			<h3>Business</h3>
+			<p class="price-tag">₹6,999</p>
+			<ul class="list">
+				<li>Up to 4 pages</li>
+				<li>Responsive + animations</li>
+				<li>Contact form UI</li>
+				<li>Delivery: 4–6 days</li>
+			</ul>
+			<a class="btn primary" href="#contact">Choose Business</a>
+		</div>
+
+		<div class="card price">
+			<h3>Premium</h3>
+			<p class="price-tag">₹11,999</p>
+			<ul class="list">
+				<li>Up to 7 pages</li>
+				<li>Advanced sections</li>
+				<li>Performance polish</li>
+				<li>Delivery: 7–10 days</li>
+			</ul>
+			<a class="btn primary" href="#contact">Choose Premium</a>
+		</div>
+	</div>
+</section>
+
+			<section id="contact" class="section">
+				<h2>Contact</h2>
+				<form class="form">
+					<label>
+						Name
+						<input type="text" placeholder="Your name" required />
+					</label>
+					<label>
+						Email
+						<input type="email" placeholder="you@example.com" required />
+					</label>
+					<label>
+						Message
+						<textarea rows="5" placeholder="What do you need built?" required></textarea>
+					</label>
+					<button class="btn primary" type="submit">Send</button>
+				</form>
+				<p class="note">
+					(Form won’t send yet—this is a UI prototype. We’ll wire it up later.)
+				</p>
+			</section>
+		</main>
+
+		<footer class="container footer">
+			<p>© <span id="year"></span> Nikhil Panda</p>
+		</footer>
+
+		<script>
+			document.getElementById("year").textContent = new Date().getFullYear();
+		</script>
+	</body>
+</html>
